@@ -11,6 +11,11 @@ export class AppController {
         return this.appService.getHello();
     }
 
+    @Get('getHelloService')
+    getHelloService(): string {
+        return this.getHelloService();
+    }
+
     // Route GET dotée d'un paramètre qui renvoie la valeur de ce paramètre
     @Get('getWithParam/:id')
     getWithParam(@Param('id') id: string): string {
